@@ -60,6 +60,10 @@ img {
   margin-right: 10%;
 }
 
+.header .header-top input{
+  padding-left: 10px;
+}
+
 .header .profileContainer {
   display: flex;
   justify-content: center;
@@ -117,6 +121,8 @@ img:hover {
 
 .header-buttons button:hover {
   background-color: rgb(10, 98, 143);
+  /* height: 2rem; */
+  min-width:5.2rem;
   cursor:pointer;
 }
 
@@ -154,6 +160,7 @@ img:hover {
   cursor: pointer;
   /* font-size: 1rem; */
   box-shadow:-8px 0px 0px 2px rgb(208, 208, 31) ;
+  padding: 1rem;
 
 }
 
@@ -268,6 +275,7 @@ img:hover {
 .dashboard ul li:hover {
   font-size: 1.15rem;
   cursor:pointer;
+  color: #e4e4e7;
 }
 
 .dashboard .dash-header:hover {
@@ -277,4 +285,11 @@ img:hover {
 /* footer */
 .footer p{
   padding: 10px;
+}
+
+
+img:hover{
+  background-color: #9cabb2;
+  border-radius: 50%;
+  box-shadow:-2px 0px 0px 3px rgb(248, 248, 96) ;
 }
