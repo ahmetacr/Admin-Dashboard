@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  border: 4px solid brown;
+}
+
+img {
+  max-height: 1.5rem ;
+  max-width: 1.5rem;
+}
+
+/* Define Grid and General Layout */
+.container {
+  display: grid;
+  grid-template: 1fr 4fr / 1fr 4fr;
+}
+
+.dashboard {
+  grid-area: 1 / 1 / -1 / 2;
+  background-color: rgb(12, 188, 224);
+}
+
+.header {
+  grid-area: 1 / 2 / 2 / -1 ;
+  background-color: blanchedalmond;
+}
+
+.main {
+  grid-area: 2 / 2 / -1 / -1;
+  display: flex;
+  background-color: grey;
+}
+
+/* Define the Header layout */
+
+.header .header-top{
+  display: flex;
+  padding: 1rem;
+  border: 2px solid red;
+  align-items: center;
+  margin-left: 2%;
+  justify-content: space-between;
+}
+
+.header .header-top .search-bar{
+  border: none;
+  background-color: rgb(203, 203, 203);
+  flex: 1;
+  max-width: 50vw;
+  height: 1.4rem;
+  border-radius: 10px;
+  margin-left: 1rem ;
+  margin-right: 10%;
+}
+
+.header .profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 5%;
+}
+
+.header .header-btm {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid yellow;
+}
+
+.header .header-btm .profileInfo {
+  display: flex;
+  gap: 10px;
+}
+
+.profileInfo img {
+  max-height: 2.5rem ;
+  max-width: 2.5rem;
+}
+
+.profileInfo p:nth-child(2) {
+  font-weight: bolder;
+}
+
+.header-buttons button{
+  margin: 0.5rem;
+  height: 1.8rem;
+  min-width:5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(11, 125, 183);
+  color: white;
+} 
+
+.header-buttons button:hover {
+  background-color: rgb(10, 98, 143);
+}
+
+/* Main Part */
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr ;
+}
+
+.main .projects {
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  border: 1px solid rgba(128, 128, 128, 0.559);
+}
+
+.projects > div {
+  padding: 10px;
+  background-color: aliceblue;
+}
