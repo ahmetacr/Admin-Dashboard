@@ -232,7 +232,7 @@ img:hover {
   display: flex;
   gap: 1rem;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   /* margin: 10px; */
   padding: 0.5rem;
 }
